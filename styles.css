@@ -1,0 +1,135 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #ffffff; /* Changed to black for better readability on white background */
+    background-color: #ffffff; /* Set background color */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #060606; /* Dark link color */
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 1200px; /* Maximum width for main content */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+  }
+  
+  /* Header */
+  .main-header {
+    background-color: #27c19a; /* Header background color */
+    border-bottom: 1px solid #b6e3d8; /* Border below header */
+  }
+  
+  .main-header .container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center vertically */
+  }
+  
+  .nav-bar ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout for links */
+    gap: 20px; /* Space between nav items */
+  }
+  
+  .nav-bar ul li {
+    font-size: 1em; /* Font size for nav items */
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 40px 20px; /* Padding for sections */
+  }
+  
+  h2 {
+    font-size: 2em; /* Size for section headers */
+    margin-bottom: 20px; /* Space below headers */
+    color: #27c19a; /* Header color */
+  }
+  
+  p {
+    font-size: 1.2em; /* Paragraph font size */
+    color: #030303; /* Dark color for text for readability */
+  }
+  
+  /* Skills List */
+  .skills-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; /* Space between skills */
+  }
+  
+  .skills-list li {
+    background-color: #27c19a; /* Background for skill items */
+    padding: 10px; /* Padding inside skill items */
+    border: 1px solid #27c19a; /* Border color matching background */
+    border-radius: 4px; /* Rounded corners */
+    text-align: center; /* Center text inside */
+  }
+  
+  /* Projects Grid */
+  .projects-grid {
+    display: grid; /* Grid for projects layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between projects */
+  }
+  
+  .project {
+    background-color: #27c19a; /* Background for project items */
+    padding: 20px; /* Padding inside project items */
+    border: 1px solid #028262; /* Darker border for contrast */
+    border-radius: 4px; /* Rounded corners */
+    text-align: center; /* Center text inside */
+  }
+  
+  /* Landing Section */
+  .landing-grid {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center align text */
+    height: 70vh; /* Full viewport height */
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    display: inline-block; /* Inline block for proper padding */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #21a080; /* Button background color */
+    color: #ffffff; /* Text color for button */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .cta-button:hover {
+    background-color: #20a783; /* Darker shade on hover */
+  }
+  
+  /* Animation Styles */
+  .animated-text {
+    opacity: 0; /* Initial opacity */
+    transform: translateY(20px); /* Initial position */
+    animation: fadeInUp 0.5s forwards; /* Animation */
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1; /* Final opacity */
+      transform: translateY(0); /* Final position */
+    }
+  }
+  
